@@ -149,6 +149,16 @@ class _HomePageBusinesState extends State<HomePageBusines> {
                     onTap: () {
                       // Verifica si el usuario está autenticado antes de navegar
                       if (isAuthenticated(context)) {
+                        GoRouter.of(context).push('/FoodMenuPage');
+                      } else {
+                        showErrorMessage(context);
+                      }
+                    },
+                    child: _buildCategoryItem(Icons.group, "Carta")),
+                  InkWell(
+                    onTap: () {
+                      // Verifica si el usuario está autenticado antes de navegar
+                      if (isAuthenticated(context)) {
                         GoRouter.of(context).push('/PedidosPage');
                       } else {
                         showErrorMessage(context);

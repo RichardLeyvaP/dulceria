@@ -1,6 +1,7 @@
 import 'package:dulceria/ui/pages/AjudaPage.dart';
 import 'package:dulceria/ui/pages/ConfiguracoesPage.dart';
 import 'package:dulceria/ui/pages/EstoquePage.dart';
+import 'package:dulceria/ui/pages/FoodMenuPage.dart';
 import 'package:dulceria/ui/pages/FuncionariosPage.dart';
 import 'package:dulceria/ui/pages/GastosPage.dart';
 import 'package:dulceria/ui/pages/HomePageBusines.dart';
@@ -73,6 +74,10 @@ class MyApp extends StatelessWidget {
       GoRoute(
         path: '/PedidosPage',
         builder: (context, state) => PedidosPage(),
+      ),
+      GoRoute(
+        path: '/FoodMenuPage',
+        builder: (context, state) => FoodMenuPage(),
       ),
       GoRoute(
         path: '/RelatoriosPage',
